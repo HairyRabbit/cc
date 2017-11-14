@@ -1,0 +1,17 @@
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.none {
+    float: none;
+}
+
+.clear {
+    content: ' ';
+    display: table;
+    clear: both;
+}

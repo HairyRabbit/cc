@@ -1,0 +1,36 @@
+@value primary   from '../var/color';
+@value secondary from '../var/color';
+@value tertiary  from '../var/color';
+
+.background-1 {
+    background: var(--primary-color, primary);
+}
+
+.background-2 {
+    background: var(--secondary-color, secondary);
+}
+
+.background-3 {
+    background: var(--tertiary-color, tertiary);
+}
+
+.color-1 {
+    color: var(--primary-color, primary);
+}
+
+.color-2 {
+    color: var(--secondary-color, secondary);
+}
+
+.color-3 {
+    color: var(--tertiary-color, tertiary);
+}
+
+
+.color-gray-0 {
+    color: white;
+}
+
+.color-gray-1 {
+    color: black;
+}

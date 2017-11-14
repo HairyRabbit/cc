@@ -1,0 +1,33 @@
+.1 {
+    flex: 1;
+}
+.0 {
+    flex: 0;
+}
+.auto {
+    flex: auto;
+}
+.none {
+    flex: none;
+}
+
+.first {
+    order: -1;
+}
+.last {
+    order: 9999;
+}
+
+.grow {
+    flex-grow: 1;
+}
+.grow-0 {
+    flex-grow: 0;
+}
+
+.shrink {
+    flex-shrink: 1;
+}
+.shrink-0 {
+    flex-shrink: 0;
+}

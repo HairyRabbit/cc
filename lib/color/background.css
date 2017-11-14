@@ -1,0 +1,83 @@
+/**
+ * Background colors.
+ */
+@value primary   from '../var/color';
+@value secondary from '../var/color';
+@value tertiary  from '../var/color';
+@value done      from '../var/color';
+@value fail      from '../var/color';
+@value warn      from '../var/color';
+@value info      from '../var/color';
+
+/**
+ * Themes.
+ */
+.primary {
+    background: primary;
+}
+
+.primary-1 {
+    background: color(primary, shade(10%));
+}
+
+.primary-2 {
+    background: color(primary, shade(15%));
+}
+
+.secondary {
+    background: secondary;
+}
+
+.tertiary {
+    background: tertiary;
+}
+
+/**
+ * Gray.
+ */
+.white {
+    background: white;
+}
+
+.black {
+    background: black;
+}
+
+.gray-1 {
+    background: white;
+}
+
+.gray-2 {
+    background: white;
+}
+
+.gray-3 {
+    background: white;
+}
+
+.gray-4 {
+    background: white;
+}
+
+.gray-5 {
+    background: white;
+}
+
+/**
+ * Status.
+ */
+.done {
+    background: done;
+}
+
+.fail {
+    background: fail;
+}
+
+.warn {
+    background: warn;
+}
+
+.info {
+    background: info;
+}

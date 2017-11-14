@@ -1,0 +1,31 @@
+/**
+ * Flex align-item prop.
+ *
+ * @example
+ *
+ * ```css
+ * .flexBox {
+ *   @cc flex/items center;
+ * }
+ * ```
+ */
+
+.stretch {
+    align-items: flex-stretch;
+}
+
+.start {
+    align-items: flex-start;
+}
+
+.center {
+    align-items: center;
+}
+
+.end {
+    align-items: flex-end;
+}
+
+.between {
+    align-items: space-between;
+}

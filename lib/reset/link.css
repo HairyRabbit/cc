@@ -1,0 +1,6 @@
+@value primary from '../var/color';
+
+a {
+    color: primary;
+    text-decoration: none;
+}

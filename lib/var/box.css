@@ -1,0 +1,12 @@
+/**
+ * Box properties.
+ */
+
+@value size-1: 8px;
+@value size-2: 16px;
+@value size-3: 24px;
+@value size-4: 32px;
+@value size-5: 64px;
+@value size-6: 128px;
+
+@value radius: var(--radius, 2px);

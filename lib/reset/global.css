@@ -1,0 +1,30 @@
+/**
+ * Reset html and body.
+ */
+
+@value main-font-family      from '../var/font';
+@value main-font-size        from '../var/font';
+@value main-line-height      from '../var/font';
+@value main-color            from '../var/color';
+@value main-background-color from '../var/color';
+
+html {
+    font-size: main-font-size;
+    font-family: main-font-family;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:     100%;
+}
+
+body {
+    margin:  0;
+    padding: 0;
+    font-size: 100%;
+    line-height: main-line-height;
+    color: main-color;
+    background-color: main-background-color;
+}
+
+html,
+body {
+    min-height: 100%;
+}

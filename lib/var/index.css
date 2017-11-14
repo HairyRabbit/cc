@@ -1,0 +1,14 @@
+/**
+ * Global variables.
+ */
+
+@value color from './color'
+
+:root {
+    --primary:   primary   from color;
+    --secondary: secondary from color;
+    --tertiary:  tertiary  from color;
+
+    --main-color: main-color from color;
+    --main-background-color: main-background-color from color;
+}

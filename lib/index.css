@@ -1,0 +1,59 @@
+/**
+ * Global reset styles.
+ *
+ *
+ */
+
+/**
+ * Normalize.css
+ *
+ * @version 4.0.0
+ */
+@import 'normalize.css';
+
+/**
+ * Suitcss
+ *
+ * @version 4.0.0
+ */
+@import 'suitcss-base/lib/base';
+
+
+/**
+ * Reset all the things.
+ */
+@import './reset';
+
+[tabindex="-1"] {
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+}
+
+input::-webkit-input-placeholder {
+    color: inherit;
+}
+input::-moz-input-placeholder {
+    color: inherit;
+}
+input::-ms-input-placeholder {
+    color: inherit;
+}
+input::placeholder {
+    color: inherit;
+}
+
+button,
+[role=button] {
+    cursor: pointer;
+}

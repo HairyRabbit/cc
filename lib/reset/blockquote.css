@@ -1,0 +1,14 @@
+/**
+ * Blockquote.
+ */
+
+@value blockquote-background-color from '../var/color';
+@value blockquote-side-color       from '../var/color';
+@value radius                      from '../var/box';
+
+blockquote {
+    padding: 1rem;
+    border-left: 4px solid blockquote-side-color;
+    border-radius: radius;
+    background: blockquote-background-color;
+}

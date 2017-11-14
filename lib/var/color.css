@@ -1,0 +1,30 @@
+/**
+ * Colors.
+ */
+
+@value primary:   var(--primary, #803C80);
+@value secondary: var(--secondary, #29a4ec);
+@value tertiary:  var(--tertiary, #29a4ec);
+
+@value done: var(--done, #94d9bb);
+@value fail: var(--fail, #b25b66);
+@value warn: var(--warn, #f6bb42);
+@value info: var(--info, #29a4ec);
+
+
+/**
+ * Global color.
+ */
+
+@value main-color: var(--main-color, #333);
+@value main-background-color: var(--main-background-color, white);
+
+/**
+ * Typography color.
+ */
+
+/**
+ * Blockquote
+ */
+@value blockquote-background-color: var(--blockquote-background-color, #f5f5f5);
+@value blockquote-side-color: var(--blockquote-side-color, #ddd);

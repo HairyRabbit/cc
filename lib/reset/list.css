@@ -1,0 +1,18 @@
+ul > li {
+    padding-left: 1rem;
+    margin-bottom: 0.25rem;
+    position: relative;
+}
+
+ul > li:before {
+    content: ' ';
+    margin: 0.5rem auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #555;
+}

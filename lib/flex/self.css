@@ -1,0 +1,34 @@
+/**
+ * Flex align-self props.
+ *
+ * @example
+ *
+ * ```css
+ * .flexBox {
+ *   @cc flex/self center;
+ * }
+ * ```
+ */
+.auto {
+    align-self: auto;
+}
+
+.start {
+    align-self: start;
+}
+
+.center {
+    align-self: center;
+}
+
+.end {
+    align-self: end;
+}
+
+.stretch {
+    align-self: stretch;
+}
+
+.baseline {
+    align-self: baseline;
+}
