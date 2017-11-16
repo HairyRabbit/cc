@@ -1,0 +1,29 @@
+@value (
+    fail,
+    fail-dark,
+    fail-deepdark,
+    fail-light
+) from '../../../lib/var/color';
+
+.button {
+    composes: base from './';
+    color: white;
+
+    background-color: fail;
+    border-color:     fail;
+
+    &:hover {
+        background-color: fail-dark;
+        border-color:     fail-dark;
+    }
+
+    &:active {
+        background-color: fail-deepdark;
+        border-color:     fail-deepdark;
+    }
+
+    &[disabled] {
+        background-color: fail-light;
+        border-color:     fail-light;
+    }
+}

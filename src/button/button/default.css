@@ -1,0 +1,21 @@
+.button {
+    composes: base from './';
+
+    background-color: transparent;
+    border-color:     transparent;
+
+    &:hover {
+        background-color: #eee;
+        border-color: #eee;
+    }
+
+    &:active {
+        background-color: #ddd;
+        border-color: #ddd;
+    }
+
+    &[disabled] {
+        background-color: #ddd;
+        border-color: #ddd;
+    }
+}

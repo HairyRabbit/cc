@@ -1,0 +1,29 @@
+@value (
+    primary,
+    primary-dark,
+    primary-deepdark,
+    primary-light
+) from '../../../lib/var/color';
+
+.button {
+    composes: base from './';
+    color: white;
+
+    background-color: primary;
+    border-color:     primary;
+
+    &:hover {
+        background-color: primary-dark;
+        border-color:     primary-dark;
+    }
+
+    &:active {
+        background-color: primary-deepdark;
+        border-color:     primary-deepdark;
+    }
+
+    &[disabled] {
+        background-color: primary-light;
+        border-color:     primary-light;
+    }
+}

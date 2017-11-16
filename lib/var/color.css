@@ -2,14 +2,41 @@
  * Colors.
  */
 
-@value primary:   var(--primary, #803C80);
+/**
+ * Themes color.
+ */
+/* @value primary:   var(--primary, #803c80); */
+@value primary:   #803c80;
 @value secondary: var(--secondary, #29a4ec);
 @value tertiary:  var(--tertiary, #29a4ec);
 
-@value done: var(--done, #94d9bb);
-@value fail: var(--fail, #b25b66);
-@value warn: var(--warn, #f6bb42);
-@value info: var(--info, #29a4ec);
+@value primary-light:     color(primary tint(20%));
+@value primary-deeplight: color(primary tint(50%));
+@value primary-dark:      color(primary shade(20%));
+@value primary-deepdark:  color(primary shade(50%));
+
+/**
+ * Status color.
+ */
+@value done: #94d9bb;
+@value fail: #b25b66;
+@value warn: #f6bb42;
+@value info: #29a4ec;
+
+@value done-light:     color(done tint(20%));
+@value done-deeplight: color(done tint(50%));
+@value done-dark:      color(done shade(20%));
+@value done-deepdark:  color(done shade(50%));
+
+@value fail-light:     color(fail tint(20%));
+@value fail-deeplight: color(fail tint(50%));
+@value fail-dark:      color(fail shade(20%));
+@value fail-deepdark:  color(fail shade(50%));
+
+@value warn-light:     color(warn tint(20%));
+@value warn-deeplight: color(warn tint(50%));
+@value warn-dark:      color(warn shade(20%));
+@value warn-deepdark:  color(warn shade(50%));
 
 
 /**

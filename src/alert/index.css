@@ -1,0 +1,30 @@
+/**
+ * Alert
+ *
+ * @component
+ */
+
+@value warn-deeplight from '../../lib/var/color';
+
+.alert {
+    composes: small from '../../lib/font/size';
+    composes: all   from '../../lib/box/radius';
+
+    padding: 0.5rem calc(1rem + 1rem + 1.5rem) 0.5rem 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+
+    background-color: warn-deeplight;
+}
+
+.desc {
+    margin-top:    0.5rem;
+    margin-bottom: 0.25rem;
+
+    font-size: 12px;
+
+    & > a {
+        font-weight: bolder;
+        /* color: inherit; */
+    }
+}

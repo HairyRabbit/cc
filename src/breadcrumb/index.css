@@ -1,0 +1,49 @@
+/**
+ * Breadcrumb
+ *
+ * @component
+ */
+
+@value primary from '../../lib/var/color';
+@value main-color: #555;
+@value current-color: color(main-color tint(50%));
+@value separator-margin: 4px;
+@value separator: '>';
+
+.breadcrumb {
+    composes: small from '../../lib/font/size';
+}
+
+.item {
+    display: inline-block;
+
+    & > a,
+    & > span {
+        color: main-color;
+    }
+
+    & > a:hover {
+        color: primary;
+    }
+
+    &:after {
+        content: separator;           /* separator: "/" */
+        color: #aaa;
+        margin: 0 separator-margin;
+    }
+
+    &:last-child:after {
+        display: none;
+        cursor: default;
+    }
+}
+
+
+.current {
+    & > span {
+        color: current-color;
+    }
+    &:after {
+        display: none;
+    }
+}

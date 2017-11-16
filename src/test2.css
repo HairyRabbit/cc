@@ -1,0 +1,4 @@
+@value foo: red;
+@value foo2: color(foo shade(1%));
+@value baz: 10px;
+@value bar: calc(baz * 2);

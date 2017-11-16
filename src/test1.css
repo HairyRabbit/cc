@@ -1,0 +1,5 @@
+@value foo, foo2, bar from './test2.css';
+.test {
+    color: foo2;
+    width: bar;
+}

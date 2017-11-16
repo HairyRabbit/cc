@@ -1,0 +1,29 @@
+@value (
+    warn,
+    warn-dark,
+    warn-deepdark,
+    warn-light
+) from '../../../lib/var/color';
+
+.button {
+    composes: base from './';
+    color: white;
+
+    background-color: warn;
+    border-color:     warn;
+
+    &:hover {
+        background-color: warn-dark;
+        border-color:     warn-dark;
+    }
+
+    &:active {
+        background-color: warn-deepdark;
+        border-color:     warn-deepdark;
+    }
+
+    &[disabled] {
+        background-color: warn-light;
+        border-color:     warn-light;
+    }
+}

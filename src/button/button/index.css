@@ -1,0 +1,27 @@
+/**
+ * Button base.
+ */
+
+@value button-height: 32px;
+@value button-min-width: calc(button-height * (1 + 1.618));
+@value button-padding: 0.5rem 1rem;
+@value button-transition-during: 0.2s;
+
+.base {
+    composes: small from '../../../lib/font/size';
+    composes: all   from '../../../lib/box/radius';
+
+    min-width:  button-min-width;
+    border:     1px solid;
+    padding:    button-padding;
+    transition: background-color button-transition-during ease-out,
+    border-color button-transition-during ease-out;
+
+    &:focus {
+        outline: none;
+    }
+
+    &[disabled] {
+        cursor: not-allowed;
+    }
+}

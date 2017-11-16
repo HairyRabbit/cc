@@ -1,0 +1,46 @@
+/**
+ * TextField
+ *
+ * @component
+ */
+
+@value primary, primary-deeplight from '../../lib/var/color';
+
+.textfield {
+    position: relative;
+}
+
+.input {
+    composes: small from '../../lib/font/size';
+    composes: all   from '../../lib/box/radius';
+
+    width: 100%;
+    border: 1px solid;
+    padding: 0.5rem;
+
+    color: inherit;
+    background: transparent;
+    transition: border-color 0.2s ease-out;
+
+    border-color: #ddd;
+
+    &:hover {
+        border-color: primary-deeplight;
+    }
+
+    &:focus {
+        border-color: primary;
+        outline: 0;
+    }
+
+    &[disabled] {
+        background-color: #eee;
+        border-color: #eee;
+        cursor: not-allowed;
+    }
+}
+
+
+.list {
+    margin-top: -1px;
+}

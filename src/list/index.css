@@ -1,0 +1,21 @@
+/**
+ * List
+ *
+ * @component
+ */
+
+.list {
+    composes: small from '../../lib/font/size';
+    composes: all   from '../../lib/box/radius';
+
+    border: 1px solid #ddd;
+}
+
+.item {
+    padding: 0.5rem;
+
+    &:hover {
+        background-color: #eee;
+        cursor: pointer;
+    }
+}

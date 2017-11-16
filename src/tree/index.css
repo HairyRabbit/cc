@@ -1,0 +1,39 @@
+/**
+ * Tree
+ *
+ * @component
+ */
+
+.tree {
+    composes: small from '../../lib/font/size';
+    composes: all   from '../../lib/box/radius';
+
+    border: 1px solid #ddd;
+    /* padding: 0.5rem 0; */
+}
+
+.item {
+
+}
+
+.node {
+
+}
+
+.child {
+    padding-left: 0.75rem;
+
+    &.root {
+        padding-left: 0;
+    }
+}
+
+.text {
+    composes: all from '../../lib/box/radius';
+    padding: 0.5rem;
+
+    &:hover {
+        background-color: #eee;
+        cursor: pointer;
+    }
+}

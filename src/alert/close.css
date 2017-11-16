@@ -1,0 +1,34 @@
+.base {
+    position: absolute;
+    top:    0;
+    right:  0;
+    button: 0;
+
+    &:hover {
+        color: inherit;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.icon {
+    composes: base;
+
+    padding: 0.25rem 1rem;
+    font-size: 1.5rem;
+    line-height: 1;
+
+    & > span {
+        vertical-align: text-top;
+    }
+}
+
+
+.text {
+    composes: base;
+
+    padding: 0.7rem 1rem;
+    font-size: 12px;
+}

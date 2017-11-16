@@ -1,0 +1,29 @@
+@value (
+    done,
+    done-dark,
+    done-deepdark,
+    done-light
+) from '../../../lib/var/color';
+
+.button {
+    composes: base from './';
+    color: white;
+
+    background-color: done;
+    border-color:     done;
+
+    &:hover {
+        background-color: done-dark;
+        border-color:     done-dark;
+    }
+
+    &:active {
+        background-color: done-deepdark;
+        border-color:     done-deepdark;
+    }
+
+    &[disabled] {
+        background-color: done-light;
+        border-color:     done-light;
+    }
+}
