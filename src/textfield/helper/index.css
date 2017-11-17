@@ -1,0 +1,38 @@
+/**
+ * Input helper.
+ *
+ * @public
+ *
+ * @var {size} icon-size
+ * @var {size} min-width
+ */
+
+@value icon-size: 1.25rem;
+@value min-width: calc(icon-size * 1.618);
+
+.helper {
+    composes: flex     from '../../../lib/flex';
+    composes: center   from '../../../lib/flex/justify';
+    composes: center   from '../../../lib/flex/items';
+    composes: col      from '../../../lib/flex/direction';
+    composes: right    from '../../../lib/position';
+    composes: absolute from '../../../lib/position/position';
+
+    width: min-width;
+    cursor: pointer;
+}
+
+.with {
+    padding-right: min-width;
+}
+
+.icon {
+    composes: flex   from '../../../lib/flex';
+    composes: center from '../../../lib/flex/justify';
+    composes: center from '../../../lib/flex/items';
+    composes: all-1  from '../../../lib/box/padding';
+}
+
+.element {
+    composes: response from '../../../lib/box/size';
+}

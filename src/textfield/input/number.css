@@ -1,0 +1,31 @@
+/**
+ * TextArea
+ *
+ * @public
+ *
+ * @require base
+ */
+@value min-height: 8rem;
+@value icon-hover-color: #eee;
+
+.number {
+    composes: input from './';
+
+    -moz-appearance: textfield;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+}
+
+.helper {
+    composes: h-1 from '../../../lib/box/padding';
+}
+
+.item {
+    composes: all from '../../../lib/box/radius';
+    &:hover {
+        background-color: icon-hover-color;
+    }
+}

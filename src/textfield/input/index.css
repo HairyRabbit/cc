@@ -1,0 +1,31 @@
+/**
+ * Basic input.
+ *
+ * @public
+ *
+ * @require {color} primary
+ * @var {color} border-default-color - #ddd
+ * @var {color} border-hover-color - primary
+ * @var {color} border-focus-color - light(primary, 50%)
+ */
+
+@value primary from '../../../lib/var/color';
+
+@value border-default-color: #ddd;
+@value border-hover-color:   color(primary tint(50%));
+@value border-focus-color:   primary;
+
+.input {
+    composes: base from './base';
+
+    transition: border-color 0.2s ease-out;
+    border-color: border-default-color;
+
+    &:hover {
+        border-color: border-hover-color;
+    }
+
+    &:focus {
+        border-color: border-focus-color;
+    }
+}

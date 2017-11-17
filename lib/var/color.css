@@ -7,8 +7,8 @@
  */
 /* @value primary:   var(--primary, #803c80); */
 @value primary:   #803c80;
-@value secondary: var(--secondary, #29a4ec);
-@value tertiary:  var(--tertiary, #29a4ec);
+@value secondary: #29a4ec;
+@value tertiary:  #29a4ec;
 
 @value primary-light:     color(primary tint(20%));
 @value primary-deeplight: color(primary tint(50%));

@@ -9,6 +9,10 @@
 @value warn      from '../var/color';
 @value info      from '../var/color';
 
+.none {
+    background: transparent;
+}
+
 /**
  * Themes.
  */

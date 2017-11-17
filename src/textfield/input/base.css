@@ -1,0 +1,46 @@
+/**
+ * Input element base style.
+ *
+ * @private
+ *
+ * @var {color} disabled-color - #eee
+ * @var {color} placeholder-color - #ddd
+ */
+
+@value disabled-color:    #eee;
+@value placeholder-color: #ddd;
+
+.base {
+    composes: inherit from '../../../lib/font/family';
+    composes: ui      from '../../../lib/font/size';
+    composes: fit     from '../../../lib/box/size';
+    composes: all     from '../../../lib/box/radius';
+    composes: solid   from '../../../lib/box/border';
+    composes: all-1   from '../../../lib/box/padding';
+    composes: inherit from '../../../lib/color/color';
+    composes: none    from '../../../lib/color/background';
+
+    &:focus {
+        outline: 0;
+    }
+
+    &[disabled] {
+        background-color: disabled-color;
+        border-color:     disabled-color;
+
+        cursor: not-allowed;
+    }
+
+    &::-webkit-input-placeholder {
+        color: placeholder-color;
+    }
+    &::-moz-input-placeholder {
+        color: placeholder-color;
+    }
+    &::-ms-input-placeholder {
+        color: placeholder-color;
+    }
+    &::placeholder {
+        color: placeholder-color;
+    }
+}

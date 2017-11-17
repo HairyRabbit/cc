@@ -1,9 +1,11 @@
-@value (
-    primary,
-    primary-dark,
-    primary-deepdark,
-    primary-light
-) from '../../../lib/var/color';
+/**
+ * Primary button.
+ */
+
+@value primary from '../../../lib/var/color';
+@value hover-color:    color(primary shade(20%));
+@value active-color:   color(primary shade(50%));
+@value disabled-color: color(primary tint(20%));
 
 .button {
     composes: base from './';
@@ -13,17 +15,17 @@
     border-color:     primary;
 
     &:hover {
-        background-color: primary-dark;
-        border-color:     primary-dark;
+        background-color: hover-color;
+        border-color:     hover-color;
     }
 
     &:active {
-        background-color: primary-deepdark;
-        border-color:     primary-deepdark;
+        background-color: active-color;
+        border-color:     active-color;
     }
 
     &[disabled] {
-        background-color: primary-light;
-        border-color:     primary-light;
+        background-color: disabled-color;
+        border-color:     disabled-color;
     }
 }

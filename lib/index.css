@@ -40,19 +40,6 @@ textarea {
     font-family: inherit;
 }
 
-input::-webkit-input-placeholder {
-    color: inherit;
-}
-input::-moz-input-placeholder {
-    color: inherit;
-}
-input::-ms-input-placeholder {
-    color: inherit;
-}
-input::placeholder {
-    color: inherit;
-}
-
 button,
 [role=button] {
     cursor: pointer;

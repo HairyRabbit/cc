@@ -1,0 +1,13 @@
+/**
+ * TextArea
+ *
+ * @public
+ *
+ * @require base
+ */
+@value min-height: 8rem;
+
+.area {
+    composes: input from './';
+    min-height: min-height;
+}

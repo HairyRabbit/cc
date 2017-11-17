@@ -9,14 +9,13 @@
     composes: all   from '../../lib/box/radius';
 
     border: 1px solid #ddd;
-    /* padding: 0.5rem 0; */
-}
-
-.item {
-
 }
 
 .node {
+
+}
+
+.listItem {
 
 }
 
@@ -28,7 +27,7 @@
     }
 }
 
-.text {
+.item {
     composes: all from '../../lib/box/radius';
     padding: 0.5rem;
 

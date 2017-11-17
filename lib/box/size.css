@@ -1,5 +1,16 @@
-@value primary   from '../var/color';
+/**
+ * Include width and height.
+ */
 
 .container {
     width: 960px;
+}
+
+.fit {
+    width: 100%;
+}
+
+.response {
+    max-width: 100%;
+    height: auto;
 }

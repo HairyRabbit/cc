@@ -9,6 +9,10 @@
 @value warn      from '../var/color';
 @value info      from '../var/color';
 
+.inherit {
+    color: inherit;
+}
+
 /**
  * Themes.
  */

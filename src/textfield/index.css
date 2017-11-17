@@ -4,28 +4,54 @@
  * @component
  */
 
-@value primary, primary-deeplight from '../../lib/var/color';
+@value primary from '../../lib/var/color';
+@value hover-color: color(primary tint(50%));
 
 .textfield {
     position: relative;
 }
 
+.helper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.helper-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > svg {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 .input {
-    composes: small from '../../lib/font/size';
-    composes: all   from '../../lib/box/radius';
+    composes: small   from '../../lib/font/size';
+    composes: fit     from '../../lib/box/size';
+    composes: all     from '../../lib/box/radius';
+    composes: solid   from '../../lib/box/border';
+    composes: all-1   from '../../lib/box/padding';
+    composes: inherit from '../../lib/color/color';
+    composes: none    from '../../lib/color/background';
 
-    width: 100%;
-    border: 1px solid;
-    padding: 0.5rem;
-
-    color: inherit;
-    background: transparent;
+    min-width: calc(1rem * 10);
     transition: border-color 0.2s ease-out;
 
     border-color: #ddd;
 
     &:hover {
-        border-color: primary-deeplight;
+        border-color: hover-color;
     }
 
     &:focus {

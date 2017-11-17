@@ -1,0 +1,8 @@
+/**
+ * Select.
+ */
+
+.select {
+    composes: input from './input';
+    cursor: pointer;
+}
