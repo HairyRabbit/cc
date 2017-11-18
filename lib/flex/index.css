@@ -1,7 +1,31 @@
+/**
+ * Flex
+ */
+
 .flex {
     display: flex;
 }
 
 .inline {
     display: inline-flex;
+}
+
+.first {
+    order: -1;
+}
+
+.last {
+    order: 9999;
+}
+
+.auto {
+    flex: auto;
+}
+
+.none {
+    flex: none;
+}
+
+.grow {
+    flex: 1;
 }

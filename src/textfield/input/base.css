@@ -11,14 +11,13 @@
 @value placeholder-color: #ddd;
 
 .base {
-    composes: inherit from '../../../lib/font/family';
-    composes: ui      from '../../../lib/font/size';
-    composes: fit     from '../../../lib/box/size';
-    composes: all     from '../../../lib/box/radius';
-    composes: solid   from '../../../lib/box/border';
-    composes: all-1   from '../../../lib/box/padding';
-    composes: inherit from '../../../lib/color/color';
-    composes: none    from '../../../lib/color/background';
+    composes: inherit from 'cc/font/family';
+    composes: ui      from 'cc/font/size';
+    composes: fit     from 'cc/box/size';
+    composes: none    from 'cc/box/border';
+    composes: all-1   from 'cc/box/padding';
+    composes: inherit from 'cc/color/color';
+    composes: none    from 'cc/color/background';
 
     &:focus {
         outline: 0;

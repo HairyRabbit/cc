@@ -1,0 +1,80 @@
+/**
+ * Cascader
+ */
+
+@value primary from 'cc/var/color';
+
+@value actived-color: color(primary tint(10%));
+@value actived-hover-color: color(primary tint(30%));
+@value cell-size: 1.5rem;
+@value max-width: calc(cell-size * 7 + 1px * 7 * 2 + 0.5rem * 2);
+
+.datepicker {
+    composes: ui     from 'cc/font/size';
+    composes: all    from 'cc/box/radius';
+}
+
+.header {
+    composes: all-1  from 'cc/box/padding';
+    composes: flex   from 'cc/flex';
+    composes: center from 'cc/flex/justify';
+    composes: center from 'cc/flex/items';
+
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.footer {
+    composes: all-1  from 'cc/box/padding';
+    composes: flex   from 'cc/flex';
+    composes: center from 'cc/flex/justify';
+    composes: center from 'cc/flex/items';
+
+    border-top: 1px solid #ddd;
+    color: primary;
+}
+
+.main {
+    composes: flex   from 'cc/flex';
+    composes: center from 'cc/flex/justify';
+    composes: center from 'cc/flex/items';
+    composes: wrap   from 'cc/flex/wrap';
+    max-width: max-width;
+    composes: all-half from 'cc/box/padding';
+}
+
+.cell {
+    composes: all     from 'cc/box/radius';
+    composes: solid   from 'cc/box/border';
+    composes: flex    from 'cc/flex';
+    composes: center  from 'cc/flex/justify';
+    composes: center  from 'cc/flex/items';
+    composes: pointer from 'cc/mouse/cursor';
+
+    flex: 0 cell-size;
+    min-height: cell-size;
+    border-color: transparent;
+    margin: 2px 1px;
+
+    &:hover {
+        background-color: #eee;
+    }
+}
+
+.actived {
+    background-color: actived-color;
+    color: #fff;
+
+    &:hover {
+        background-color: actived-hover-color;
+    }
+}
+
+.today {
+    border-color: actived-color;
+    &:hover {
+        border-color: actived-hover-color;
+        background-color: transparent;
+    }
+}

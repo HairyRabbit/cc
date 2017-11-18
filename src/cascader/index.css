@@ -1,0 +1,21 @@
+/**
+ * Cascader
+ */
+
+.cascader {
+    composes: ui   from 'cc/font/size';
+    composes: all  from 'cc/box/radius';
+    composes: flex from 'cc/flex';
+}
+
+.item {
+    composes: fit-min-height from 'cc/box/size';
+    composes: grow           from 'cc/flex';
+    composes: list-h         from 'cc/box/border';
+
+    border-right-color: #ddd;
+}
+
+.sub {
+    composes: all-1 from 'cc/box/padding';
+}

@@ -11,7 +11,7 @@
  */
 
 .stretch {
-    align-items: flex-stretch;
+    align-items: stretch;
 }
 
 .start {

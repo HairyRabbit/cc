@@ -14,3 +14,11 @@
     max-width: 100%;
     height: auto;
 }
+
+.width-1 {
+    width: 1rem;
+}
+
+.fit-min-height {
+    min-height: 100%;
+}

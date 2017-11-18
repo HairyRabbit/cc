@@ -7,32 +7,33 @@
  * @var {size} min-width
  */
 
+@value gray-4 from 'cc/var/color';
+
 @value icon-size: 1.25rem;
 @value min-width: calc(icon-size * 1.618);
 
 .helper {
-    composes: flex     from '../../../lib/flex';
-    composes: center   from '../../../lib/flex/justify';
-    composes: center   from '../../../lib/flex/items';
-    composes: col      from '../../../lib/flex/direction';
-    composes: right    from '../../../lib/position';
-    composes: absolute from '../../../lib/position/position';
+    composes: flex last from 'cc/flex';
+    composes: center    from 'cc/flex/justify';
+    composes: center    from 'cc/flex/items';
+    composes: col       from 'cc/flex/direction';
+    composes: pointer   from 'cc/mouse/cursor';
 
-    width: min-width;
-    cursor: pointer;
+    flex: 0 min-width;
+    color: gray-4;
 }
 
 .with {
-    padding-right: min-width;
+    composes: right-0 from 'cc/box/padding';
 }
 
 .icon {
-    composes: flex   from '../../../lib/flex';
-    composes: center from '../../../lib/flex/justify';
-    composes: center from '../../../lib/flex/items';
-    composes: all-1  from '../../../lib/box/padding';
+    composes: flex   from 'cc/flex';
+    composes: center from 'cc/flex/justify';
+    composes: center from 'cc/flex/items';
+    composes: all-1  from 'cc/box/padding';
 }
 
 .element {
-    composes: response from '../../../lib/box/size';
+    composes: response width-1 from 'cc/box/size';
 }

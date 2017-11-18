@@ -2,6 +2,10 @@
  * Padding
  */
 
+.all-half {
+    padding: 0.25rem;
+}
+
 .all-1 {
     padding: 0.5rem;
 }
@@ -12,4 +16,20 @@
 
 .v-1 {
     padding: 0 0.5rem;
+}
+
+.top-0 {
+    padding-top: 0;
+}
+
+.right-0 {
+    padding-right: 0;
+}
+
+.bottom-0 {
+    padding-bottom: 0;
+}
+
+.left-0 {
+    padding-left: 0;
 }

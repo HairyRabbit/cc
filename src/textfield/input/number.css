@@ -5,27 +5,28 @@
  *
  * @require base
  */
-@value min-height: 8rem;
-@value icon-hover-color: #eee;
+
+@value gray-0 from 'cc/var/color';
+
+@value spin-size: calc(2rem / 2);
 
 .number {
     composes: input from './';
 
     -moz-appearance: textfield;
-
     &::-webkit-inner-spin-button,
     &::-webkit-outer-spin-button {
         -webkit-appearance: none;
     }
 }
 
-.helper {
-    composes: h-1 from '../../../lib/box/padding';
-}
-
 .item {
-    composes: all from '../../../lib/box/radius';
+    composes: all from 'cc/box/radius';
+
+    padding: 0 0.5rem;
+    flex: 0 spin-size;
+
     &:hover {
-        background-color: icon-hover-color;
+        background-color: gray-0;
     }
 }

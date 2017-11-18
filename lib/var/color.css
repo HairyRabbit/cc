@@ -38,13 +38,24 @@
 @value warn-dark:      color(warn shade(20%));
 @value warn-deepdark:  color(warn shade(50%));
 
+/**
+ * Gray
+ */
+@value gray-0: #eee;
+@value gray-1: #ddd;
+@value gray-2: #ccc;
+@value gray-3: #aaa;
+@value gray-4: #888;
+@value gray-5: #555;
+@value gray-6: #222;
+
 
 /**
  * Global color.
  */
 
-@value main-color: var(--main-color, #333);
-@value main-background-color: var(--main-background-color, white);
+@value main-color: #3c3c3c;
+@value main-background-color: #fff;
 
 /**
  * Typography color.

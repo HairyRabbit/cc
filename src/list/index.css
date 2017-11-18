@@ -4,18 +4,33 @@
  * @component
  */
 
+@value primary from 'cc/var/color';
+@value actived-color: color(primary tint(10%));
+@value actived-hover-color: color(primary tint(30%));
+
 .list {
-    composes: small from '../../lib/font/size';
-    composes: all   from '../../lib/box/radius';
+    composes: ui  from 'cc/font/size';
+    composes: all from 'cc/box/radius';
 
     border: 1px solid #ddd;
+    padding: 0.25rem;
 }
 
 .item {
-    padding: 0.5rem;
+    composes: all from 'cc/box/radius';
+    padding: 0.25rem 0.5rem;
 
     &:hover {
         background-color: #eee;
         cursor: pointer;
+    }
+}
+
+.active {
+    background-color: actived-color;
+    color: #fff;
+
+    &:hover {
+        background-color: actived-hover-color;
     }
 }

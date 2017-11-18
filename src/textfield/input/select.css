@@ -3,6 +3,6 @@
  */
 
 .select {
-    composes: input from './input';
+    composes: input from './';
     cursor: pointer;
 }

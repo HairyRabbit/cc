@@ -3,8 +3,10 @@
  *
  * @public
  *
- * @require base
+ * @require textfiled:input
+ * @var {size} min-height - Default textarea height
  */
+
 @value min-height: 8rem;
 
 .area {

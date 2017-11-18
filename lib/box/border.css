@@ -5,3 +5,23 @@
 .solid {
     border: 1px solid;
 }
+
+.none {
+    border: none;
+}
+
+.list {
+    border-bottom: 1px solid;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.list-h {
+    border-right: 1px solid;
+
+    &:last-child {
+        border-right: none;
+    }
+}

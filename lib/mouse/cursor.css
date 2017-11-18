@@ -1,0 +1,19 @@
+/**
+ * Mouse cursor
+ */
+
+.auto {
+    cursor: auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.default {
+    cursor: default;
+}

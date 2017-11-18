@@ -1,0 +1,36 @@
+/**
+ * TextField tags
+ *
+ * @public
+ *
+ * @require {color} gray-4
+ * @var {size} icon-size
+ * @var {size} min-width - tag size
+ * @var {size} icon-pad - icon size
+ */
+
+@value gray-4 from 'cc/var/color';
+
+@value icon-size: 1.5rem;
+@value min-width: calc(icon-size * 1.618);
+@value icon-pad:  calc((min-width - icon-size) / 2);
+
+.tag {
+    composes: flex first from 'cc/flex';
+    composes: center     from 'cc/flex/justify';
+    composes: center     from 'cc/flex/items';
+    composes: default    from 'cc/mouse/cursor';
+
+    padding: 0 icon-pad;
+    flex:    0 min-width;
+
+    color: gray-4;
+}
+
+.with {
+    composes: left-0 from 'cc/box/padding';
+}
+
+.element {
+    composes: response from 'cc/box/size';
+}

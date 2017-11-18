@@ -9,4 +9,4 @@
 @value size-5: 64px;
 @value size-6: 128px;
 
-@value radius: var(--radius, 2px);
+@value radius: 2px;
