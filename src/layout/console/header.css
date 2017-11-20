@@ -1,0 +1,96 @@
+.header {
+    composes: flex from 'cc/flex';
+    composes: between from 'cc/flex/justify';
+    /* background-color: color(#fff shade(2%)); */
+    border-bottom: 0.5px solid #eee;
+}
+
+.logo {
+    padding: 0.5rem 1rem;
+}
+
+.nav {
+    margin-top: 1rem;
+}
+
+.search {
+    background-color: #eee;
+    border-radius: 2rem;
+    min-width: 260px;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+}
+
+.content {
+    margin: 1rem 0;
+    composes: flex from 'cc/flex';
+    position: relative;
+}
+
+.tools {
+    composes: flex from 'cc/flex';
+    composes: end from 'cc/flex/content';
+    composes: all-1 from 'cc/box/padding';
+}
+
+.item {
+    margin: 0 0.5rem;
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: color(red tint(50%));
+}
+
+.main {
+    padding: 0 1rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.tab {
+    composes: flex from 'cc/flex';
+}
+
+@value primary from 'cc/var/color';
+
+.tabtitle {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    margin-right: 0.5rem;
+}
+
+.active {
+    border-color: primary;
+}
+
+.left {
+
+}
+
+.right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.demo {
+    width: 88px;
+}

@@ -1,0 +1,33 @@
+.app {
+    composes: flex from 'cc/flex';
+
+    min-height: 100%;
+}
+
+.side {
+    composes: flex from 'cc/flex';
+    composes: col from 'cc/flex/direction';
+    background-color: #333;
+    color: white;
+}
+
+.header {
+    composes: flex from 'cc/flex';
+}
+
+.body {
+    composes: flex grow from 'cc/flex';
+    composes: col from 'cc/flex/direction';
+}
+
+.main {
+    composes: flex grow from 'cc/flex';
+    background-color: #f3f3f3;
+}
+
+.content {
+    composes: flex grow from 'cc/flex';
+    composes: all from 'cc/box/border';
+    margin: 1rem;
+    /* background-color: #fff; */
+}
