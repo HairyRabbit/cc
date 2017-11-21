@@ -1,75 +1,195 @@
 /**
  * Grid system.
+ *
+ * 12 grid and percentage grid, base on flex.
+ *
+ * 1. row
+ * 2. grid-*
+ * 3. grid-p*
+ *
+ * @var {size} gutter
+ *
+ * @example
+ *
+ * ```css
+ * .container {
+ *   composes: row from 'cc/box/grid';
+ * }
+ *
+ * .grid {
+ *   composes: grid-3 from 'cc/box/grid';
+ * }
+ *
+ * .grid {
+ *   composes: grid-p25 from 'cc/box/grid';
+ * }
+ * ```
  */
 
-@value gutter: 1rem;
+@value gutter from '../var/box';
 
 .row {
-    margin-left:  calc(gutter * -1);
-    margin-right: calc(gutter * -1);
+    composes: flex from '../flex';
+    margin-left:  calc(gutter / -2);
+    margin-right: calc(gutter / -2);
 }
 
 .grid {
-    padding-left:  gutter;
-    padding-right: gutter;
+    padding-left:  calc(gutter / 2);
+    padding-right: calc(gutter / 2);
+}
+
+.auto {
+    composes: grid;
+    flex: 1;
 }
 
 .grid-1 {
     composes: grid;
-    width: calc(1 / 12 * 100)%;
+    flex: 0 calc(1 / 12 * 100)%;
 }
 
 .grid-2 {
     composes: grid;
-    width: calc(2 / 12 * 100)%;
+    flex: 0 calc(2 / 12 * 100)%;
 }
 
 .grid-3 {
     composes: grid;
-    width: calc(3 / 12 * 100)%;
+    flex: 0 calc(3 / 12 * 100)%;
 }
 
 .grid-4 {
     composes: grid;
-    width: calc(4 / 12 * 100)%;
+    flex: 0 calc(4 / 12 * 100)%;
 }
 
 .grid-5 {
     composes: grid;
-    width: calc(5 / 12 * 100)%;
+    flex: 0 calc(5 / 12 * 100)%;
 }
 
 .grid-6 {
     composes: grid;
-    width: calc(6 / 12 * 100)%;
+    flex: 0 calc(6 / 12 * 100)%;
 }
 
 .grid-7 {
     composes: grid;
-    width: calc(7 / 12 * 100)%;
+    flex: 0 calc(7 / 12 * 100)%;
 }
 
 .grid-8 {
     composes: grid;
-    width: calc(8 / 12 * 100)%;
+    flex: 0 calc(8 / 12 * 100)%;
 }
 
 .grid-9 {
     composes: grid;
-    width: calc(9 / 12 * 100)%;
+    flex: 0 calc(9 / 12 * 100)%;
 }
 
 .grid-10 {
     composes: grid;
-    width: calc(10 / 12 * 100)%;
+    flex: 0 calc(10 / 12 * 100)%;
 }
 
 .grid-11 {
     composes: grid;
-    width: calc(11 / 12 * 100)%;
+    flex: 0 calc(11 / 12 * 100)%;
 }
 
-.grid-12 {
+.grid-p05 {
     composes: grid;
-    width: calc(12 / 12 * 100)%;
+    flex: 0 5%;
+}
+
+.grid-p10 {
+    composes: grid;
+    flex: 0 10%;
+}
+
+.grid-p15 {
+    composes: grid;
+    flex: 0 15%;
+}
+
+.grid-p20 {
+    composes: grid;
+    flex: 0 20%;
+}
+
+.grid-p25 {
+    composes: grid;
+    flex: 0 25%;
+}
+
+.grid-p30 {
+    composes: grid;
+    flex: 0 30%;
+}
+
+.grid-p35 {
+    composes: grid;
+    flex: 0 35%;
+}
+
+.grid-p40 {
+    composes: grid;
+    flex: 0 40%;
+}
+
+.grid-p45 {
+    composes: grid;
+    flex: 0 45%;
+}
+
+.grid-p50 {
+    composes: grid;
+    flex: 0 50%;
+}
+
+.grid-p55 {
+    composes: grid;
+    flex: 0 55%;
+}
+
+.grid-p60 {
+    composes: grid;
+    flex: 0 60%;
+}
+
+.grid-p65 {
+    composes: grid;
+    flex: 0 65%;
+}
+
+.grid-p70 {
+    composes: grid;
+    flex: 0 70%;
+}
+
+.grid-p75 {
+    composes: grid;
+    flex: 0 75%;
+}
+
+.grid-p80 {
+    composes: grid;
+    flex: 0 80%;
+}
+
+.grid-p85 {
+    composes: grid;
+    flex: 0 85%;
+}
+
+.grid-p90 {
+    composes: grid;
+    flex: 0 90%;
+}
+
+.grid-p95 {
+    composes: grid;
+    flex: 0 95%;
 }
