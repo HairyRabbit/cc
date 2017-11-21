@@ -27,7 +27,6 @@
 
 .content {
     composes: flex grow from 'cc/flex';
-    composes: all from 'cc/box/border';
-    margin: 1rem;
-    /* background-color: #fff; */
+    composes: all   from 'cc/box/border';
+    composes: all-1 from 'cc/box/margin';
 }
