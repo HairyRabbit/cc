@@ -1,15 +1,36 @@
 /**
- * Position
+ * Position.
+ *
+ * 1.absolute
+ * 2.relative
+ * 3.fixed
+ * 4.sticky
+ *
+ * @example
+ *
+ * ```css
+ * .parent {
+ *   composes: relative from 'cc/position/relative';
+ * }
+ * .child {
+ *   composes: absolute from 'cc/position/absolute';
+ *   composes: fit from      'cc/position';
+ * }
+ * ```
  */
 
 .absolute {
-    position: absolute;
+  position: absolute;
 }
 
 .relative {
-    position: relative;
+  position: relative;
 }
 
 .fixed {
-    position: fixed;
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
 }

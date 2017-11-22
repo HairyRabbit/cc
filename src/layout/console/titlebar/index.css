@@ -1,0 +1,19 @@
+/**
+ * Titlebar
+ *
+ * +-------------------------+
+ * |     Topbar(header)      |
+ * +-------------------------+
+ * |                         |
+ * |      Content(body)      |
+ * |                         |
+ * +-------------------------+
+ * |       Tab(footer)       |
+ * +-------------------------+
+ */
+
+.titlebar {
+    composes: top layer from 'cc/position';
+    composes: sticky    from 'cc/position/position';
+    composes: white     from 'cc/color/background';
+}

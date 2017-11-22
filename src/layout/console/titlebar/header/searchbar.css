@@ -1,0 +1,11 @@
+/**
+ * Searchbar
+ */
+
+.searchbar {
+  composes: h-1 from 'cc/box/padding';
+  composes: v-1 from 'cc/box/margin';
+  background-color: #eee;
+  border-radius: 2rem;
+  min-width: 260px;
+}

@@ -1,0 +1,10 @@
+/**
+ * Sidebar
+ */
+
+.sidebar {
+    composes: flex   from 'cc/flex';
+    composes: col    from 'cc/flex/direction';
+    composes: gray-7 from 'cc/color/background';
+    composes: gray-2 from 'cc/color/color';
+}

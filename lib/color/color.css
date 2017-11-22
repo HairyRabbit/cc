@@ -1,16 +1,25 @@
 /**
- * Background colors.
+ * Font colors.
  */
-@value primary   from '../var/color';
-@value secondary from '../var/color';
-@value tertiary  from '../var/color';
-@value done      from '../var/color';
-@value fail      from '../var/color';
-@value warn      from '../var/color';
-@value info      from '../var/color';
+
+@value (
+    /* Themes */
+    primary, secondary, tertiary,
+
+    /* Status */
+    done, fail, warn, info,
+
+    /* Gray */
+    gray-1, gray-2, gray-3, gray-4,
+    gray-5, gray-6, gray-7, gray-8
+) from '../var/color';
 
 .inherit {
     color: inherit;
+}
+
+.current {
+    color: currentColor;
 }
 
 /**
@@ -26,37 +35,6 @@
 
 .tertiary {
     color: tertiary;
-}
-
-/**
- * Gray.
- */
-.white {
-    color: white;
-}
-
-.black {
-    color: black;
-}
-
-.gray-1 {
-    color: white;
-}
-
-.gray-2 {
-    color: white;
-}
-
-.gray-3 {
-    color: white;
-}
-
-.gray-4 {
-    color: white;
-}
-
-.gray-5 {
-    color: white;
 }
 
 /**
@@ -76,4 +54,47 @@
 
 .info {
     color: info;
+}
+
+/**
+ * Gray.
+ */
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.gray-1 {
+    color: gray-1;
+}
+
+.gray-2 {
+    color: gray-2;
+}
+
+.gray-3 {
+    color: gray-3;
+}
+
+.gray-4 {
+    color: gray-4;
+}
+
+.gray-5 {
+    color: gray-5;
+}
+
+.gray-6 {
+    color: gray-6;
+}
+
+.gray-7 {
+    color: gray-7;
+}
+
+.gray-8 {
+    color: gray-8;
 }

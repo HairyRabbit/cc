@@ -1,32 +1,45 @@
+/**
+ * Console Layout
+ *
+ * @layout
+ *
+ * +---------+---------------+
+ * |         |    Titlebar   |
+ * |         +---------------+
+ * |         |               |
+ * | Sidebar |               |
+ * |         |    Content    |
+ * |         |               |
+ * |         |               |
+ * +---------+---------------+
+ */
+
+
+/**
+ * Global reset.
+ *
+ * @global
+ */
+html,
+body,
+body > :global(#app) {
+  height: 100%;
+}
+
 .app {
-    composes: flex from 'cc/flex';
-
-    min-height: 100%;
-}
-
-.side {
-    composes: flex from 'cc/flex';
-    composes: col from 'cc/flex/direction';
-    background-color: #333;
-    color: white;
-}
-
-.header {
-    composes: flex from 'cc/flex';
-}
-
-.body {
-    composes: flex grow from 'cc/flex';
-    composes: col from 'cc/flex/direction';
+  composes: flex from 'cc/flex';
+  composes: fit-min-height from 'cc/box/size';
 }
 
 .main {
-    composes: flex grow from 'cc/flex';
-    background-color: #f3f3f3;
+  composes: flex grow from 'cc/flex';
+  composes: col       from 'cc/flex/direction';
+  composes: relative  from 'cc/position/position';
+  background-color: #f3f3f3;
 }
 
 .content {
-    composes: flex grow from 'cc/flex';
-    composes: all   from 'cc/box/border';
-    composes: all-1 from 'cc/box/margin';
+  composes: flex grow from 'cc/flex';
+  composes: all   from 'cc/box/border';
+  composes: all-2 from 'cc/box/margin';
 }

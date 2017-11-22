@@ -1,6 +1,10 @@
-@value primary from '../var/color';
+/**
+ * Link.
+ *
+ * </a>
+ */
 
 a {
-    color: primary;
+    color: inherit;
     text-decoration: none;
 }

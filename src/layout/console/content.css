@@ -1,13 +1,13 @@
 .row {
-    composes: row from 'cc/box/grid';
+  composes: row from 'cc/box/grid';
 }
 
 .left {
-    composes: grid-8 from 'cc/box/grid';
+    composes: auto from 'cc/box/grid';
 }
 
 .right {
-    composes: grid-4 from 'cc/box/grid';
+    composes: grid-2 from 'cc/box/grid';
 }
 
 .card {

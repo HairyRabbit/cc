@@ -1,0 +1,25 @@
+/**
+ * Box
+ *
+ * +------+------------------+-------+
+ * | left | main (auto grow) | right |
+ * +------+------------------+-------+
+ *
+ * @private
+ */
+
+.line {
+    composes: flex from 'cc/flex';
+}
+
+.left {
+    composes: first from 'cc/flex';
+}
+
+.right {
+    composes: last from 'cc/flex';
+}
+
+.main {
+    composes: grow from 'cc/flex';
+}

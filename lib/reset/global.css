@@ -1,5 +1,11 @@
 /**
  * Reset html and body.
+ *
+ * @var {Array<string>} main-font-family
+ * @var {size} main-font-size
+ * @var {size} main-line-height
+ * @var {color} main-color
+ * @var {color} main-background-color
  */
 
 @value main-font-family      from '../var/font';
@@ -20,13 +26,15 @@ html {
 body {
     margin:  0;
     padding: 0;
-    font-size: 100%;
+
+    font-size:   100%;
     line-height: main-line-height;
-    color: main-color;
+
     background-color: main-background-color;
+    color:            main-color;
 }
 
-html,
-body {
-    min-height: 100%;
+[hidden] {
+    display: none !important;
+    visibility: hidden;
 }

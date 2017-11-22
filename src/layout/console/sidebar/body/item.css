@@ -1,0 +1,34 @@
+/**
+ * Sidebar Menu item
+ */
+
+.item {
+  composes: line from '../../../../box';
+  composes: h-2  from 'cc/box/padding';
+  composes: ui   from 'cc/font/size';
+}
+
+.item-mini {
+  composes: ui   from 'cc/font/size';
+  composes: icon from '../../../../icon';
+}
+
+.item-hover {
+  composes: item-mini;
+  composes: white from 'cc/color/color';
+}
+
+.icon {
+  composes: left from '../../../../box';
+  composes: icon from '../../../../icon';
+  composes: h-1  from 'cc/box/padding';
+}
+
+.content {
+  composes: main from '../../../../box';
+}
+
+.selector {
+  composes: right from '../../../../box';
+  composes: center from 'cc/flex';
+}

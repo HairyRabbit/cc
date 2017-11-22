@@ -1,0 +1,14 @@
+/**
+ * Sidebar Logo
+ */
+
+@value logo-size: 12rem;
+@value logo-mini-size: 2rem;
+
+.normal {
+    width: logo-size;
+}
+
+.small {
+    width: logo-mini-size;
+}

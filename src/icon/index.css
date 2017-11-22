@@ -1,0 +1,30 @@
+/**
+ * Icon
+ *
+ * 1. Normal size was 20x20 px.
+ * 2. Large size was 24x24 px.
+ * 3. Small size was 16x16 px.
+ */
+
+@value small:  1rem;
+@value normal: 1.25rem;
+@value large:  1.5rem;
+
+.icon {
+    composes: center from 'cc/flex';
+}
+
+.normal {
+    composes: auto from 'cc/box/size';
+    width: normal;
+}
+
+.large {
+    composes: auto from 'cc/box/size';
+    width: large;
+}
+
+.small {
+    composes: auto from 'cc/box/size';
+    width: small;
+}

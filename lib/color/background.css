@@ -1,87 +1,143 @@
 /**
  * Background colors.
  */
-@value primary   from '../var/color';
-@value secondary from '../var/color';
-@value tertiary  from '../var/color';
-@value done      from '../var/color';
-@value fail      from '../var/color';
-@value warn      from '../var/color';
-@value info      from '../var/color';
 
+@value (
+    /* Themes */
+    primary, secondary, tertiary,
+
+    /* Status */
+    done, fail, warn, info,
+
+    /* Gray */
+    gray-1, gray-2, gray-3, gray-4,
+    gray-5, gray-6, gray-7, gray-8
+) from '../var/color';
+
+/**
+ * Feature.
+ */
 .none {
-    background: transparent;
+    background-color: transparent;
 }
 
 /**
  * Themes.
  */
 .primary {
-    background: primary;
+    background-color: primary;
 }
 
 .primary-1 {
-    background: color(primary, shade(10%));
+    background-color: color(primary shade(10%));
 }
 
 .primary-2 {
-    background: color(primary, shade(15%));
+    background-color: color(primary shade(15%));
 }
 
 .secondary {
-    background: secondary;
+    background-color: secondary;
 }
 
 .tertiary {
-    background: tertiary;
-}
-
-/**
- * Gray.
- */
-.white {
-    background: white;
-}
-
-.black {
-    background: black;
-}
-
-.gray-1 {
-    background: white;
-}
-
-.gray-2 {
-    background: white;
-}
-
-.gray-3 {
-    background: white;
-}
-
-.gray-4 {
-    background: white;
-}
-
-.gray-5 {
-    background: white;
+    background-color: tertiary;
 }
 
 /**
  * Status.
  */
 .done {
-    background: done;
+    background-color: done;
 }
 
 .fail {
-    background: fail;
+    background-color: fail;
 }
 
 .warn {
-    background: warn;
+    background-color: warn;
 }
 
 .info {
-    background: info;
+    background-color: info;
+}
+
+/**
+ * Gray.
+ */
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
+.gray-1 {
+    background-color: gray-1;
+}
+
+.gray-2 {
+    background-color: gray-2;
+}
+
+.gray-3 {
+    background-color: gray-3;
+}
+
+.gray-4 {
+    background-color: gray-4;
+}
+
+.gray-5 {
+    background-color: gray-5;
+}
+
+.gray-6 {
+    background-color: gray-6;
+}
+
+.gray-7 {
+    background-color: gray-7;
+}
+
+.gray-8 {
+    background-color: gray-8;
+}
+
+/**
+ * Alpha for black
+ */
+
+.black-1 {
+    background-color: color(black a(16%));
+}
+
+.black-2 {
+    background-color: color(black a(24%));
+}
+
+.black-3 {
+    background-color: color(black a(32%));
+}
+
+.black-4 {
+    background-color: color(black a(48%));
+}
+
+.black-5 {
+    background-color: color(black a(56%));
+}
+
+.black-6 {
+    background-color: color(black a(64%));
+}
+
+.black-7 {
+    background-color: color(black a(72%));
+}
+
+.black-8 {
+    background-color: color(black a(88%));
 }

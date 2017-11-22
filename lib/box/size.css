@@ -1,24 +1,33 @@
 /**
+ * Size
+ *
  * Include width and height.
  */
 
-.container {
-    width: 960px;
+.width-1 {
+    width: 1rem;
 }
 
 .fit {
     width: 100%;
 }
 
-.response {
+.fit-max-width {
     max-width: 100%;
-    height: auto;
 }
 
-.width-1 {
-    width: 1rem;
+.fit-height {
+    height: 100%;
 }
 
 .fit-min-height {
     min-height: 100%;
+}
+
+.auto {
+    height: auto;
+}
+
+.response {
+    composes: fit-max-width auto;
 }

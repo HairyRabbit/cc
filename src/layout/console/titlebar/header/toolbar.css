@@ -1,0 +1,25 @@
+/**
+ * Toolbar
+ */
+
+.toolbar {
+  composes: flex  from 'cc/flex';
+  composes: end   from 'cc/flex/content';
+  composes: all-1 from 'cc/box/padding';
+}
+
+.item {
+  composes: h-1      from 'cc/box/margin';
+  composes: relative from 'cc/position/position';
+  composes: pointer  from 'cc/mouse/cursor';
+  composes: icon     from '../../../../icon';
+}
+
+.dot {
+  composes: absolute  from 'cc/position/position';
+  composes: top-right from 'cc/position';
+  composes: circle    from 'cc/box/radius';
+  width: 8px;
+  height: 8px;
+  background-color: color(red tint(50%));
+}

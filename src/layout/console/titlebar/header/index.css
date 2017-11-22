@@ -1,0 +1,14 @@
+/**
+ * Titlebar Header
+ */
+
+.header {
+  composes: flex    from 'cc/flex';
+  composes: between from 'cc/flex/justify';
+  border-bottom: 1px solid;
+  border-color: #eee;
+}
+
+.logo {
+  padding: 0.5rem 1rem;
+}

@@ -29,3 +29,9 @@
 .grow {
     flex: 1;
 }
+
+.center {
+    composes: flex;
+    composes: center from './justify';
+    composes: center from './items';
+}

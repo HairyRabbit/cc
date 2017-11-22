@@ -1,0 +1,25 @@
+/**
+ * Avatar
+ *
+ * @component
+ */
+
+.normal {
+    composes: circle from 'cc/box/radius';
+    width: 2rem;
+}
+
+.small {
+    composes: circle from 'cc/box/radius';
+    width: 1.5rem;
+}
+
+.large {
+    composes: circle from 'cc/box/radius';
+    width: 3rem;
+}
+
+.huge {
+    composes: circle from 'cc/box/radius';
+    width: 5rem;
+}

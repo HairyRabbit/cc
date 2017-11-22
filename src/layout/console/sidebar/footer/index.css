@@ -1,0 +1,23 @@
+/**
+ * Sidebar Footer
+ */
+
+.footer {
+    composes: all-1  from 'cc/box/padding';
+}
+
+.main {
+    composes: ui   from 'cc/font/size';
+    composes: line from '../../../../box';
+    composes: h-1  from 'cc/box/padding';
+}
+
+.icon {
+    composes: left from '../../../../box';
+    composes: icon from '../../../../icon';
+    composes: h-1  from 'cc/box/padding';
+}
+
+.content {
+    composes: main from '../../../../box';
+}

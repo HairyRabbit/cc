@@ -1,0 +1,17 @@
+/**
+ * Sidebar Submenu
+ */
+
+.sub {
+    composes: v-1     from 'cc/box/padding';
+    composes: h-n1    from 'cc/box/margin';
+    composes: black-1 from 'cc/color/background';
+
+    padding-left:  2.25rem;     /* 1 */
+    margin-top:    0.5rem;      /* 2 */
+    margin-bottom: -1.25rem;    /* 3 */
+}
+
+.item {
+    composes: item-common from './';
+}

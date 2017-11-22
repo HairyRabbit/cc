@@ -1,0 +1,48 @@
+/**
+ * Sidebar Menu layout.
+ *
+ * @example
+ *
+ * <ul class="menu" role="tablist">
+ *   <li class="item">
+ *     <a href="/foo">
+ *       <div class="box" role="tab">Bar</div>
+ *     </a>
+ *   </li>
+ * </ul>
+ */
+
+.menu-common {
+    composes: flex grow from 'cc/flex';
+    composes: col       from 'cc/flex/direction';
+}
+
+.menu {
+    composes: v-2       from 'cc/box/padding';
+    composes: black-1   from 'cc/color/background';
+    composes: menu-common;
+}
+
+.menu-mini {
+    composes: menu-common;
+}
+
+.item-common {
+    composes: all-1  from 'cc/box/padding';
+    transition: color 0.16s ease-out;
+}
+
+.item {
+    composes: bottom from 'cc/box/margin';
+    composes: item-common;
+}
+
+.item-hover {
+    composes: white from 'cc/color/color';
+    composes: item-common;
+}
+
+.item-active {
+    composes: bottom-none from 'cc/box/margin';
+    composes: item-common;
+}

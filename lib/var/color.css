@@ -5,7 +5,7 @@
 /**
  * Themes color.
  */
-/* @value primary:   var(--primary, #803c80); */
+
 @value primary:   #803c80;
 @value secondary: #29a4ec;
 @value tertiary:  #29a4ec;
@@ -41,21 +41,22 @@
 /**
  * Gray
  */
-@value gray-0: #eee;
-@value gray-1: #ddd;
-@value gray-2: #ccc;
-@value gray-3: #aaa;
-@value gray-4: #888;
-@value gray-5: #555;
-@value gray-6: #222;
-
+@value gray-1: #eee;
+@value gray-2: #ddd;
+@value gray-3: #ccc;
+@value gray-4: #aaa;
+@value gray-5: #888;
+@value gray-6: #555;
+@value gray-7: #333;
+@value gray-8: #222;
 
 /**
  * Global color.
  */
 
-@value main-color: #3c3c3c;
 @value main-background-color: #fff;
+@value main-color:            #3c3c3c;
+
 
 /**
  * Typography color.
