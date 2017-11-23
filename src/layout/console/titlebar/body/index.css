@@ -1,0 +1,18 @@
+.main {
+  padding: 1rem 1.5rem;
+}
+
+.content {
+  composes: v-1 from 'cc/box/margin';
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: lighter;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 14px;
+  color: #aaa;
+}

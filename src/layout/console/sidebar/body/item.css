@@ -18,17 +18,54 @@
   composes: white from 'cc/color/color';
 }
 
+.avatar {
+  transition: all 0.2s ease-out;
+}
+
 .icon {
   composes: left from '../../../../box';
   composes: icon from '../../../../icon';
   composes: h-1  from 'cc/box/padding';
 }
 
+.icon-element {
+  transition: width 0.2s ease-out;
+}
+
 .content {
   composes: main from '../../../../box';
+  display: block;
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.content-mini {
+  display: none;
+}
+
+.content-exited {
+  display: block;
+}
+
+.content-entering {
+  opacity: 0;
+  transform: translate3d(0.5rem, 0, 0);
+}
+
+.content-entered {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 
 .selector {
   composes: right from '../../../../box';
   composes: center from 'cc/flex';
+  transition: opacity 0.2s ease-out;
+  opacity: 1;
+}
+
+.selector-hover {
+  opacity: 1;
 }

@@ -2,6 +2,26 @@
  * Border color
  */
 
+@value (
+  /* Themes */
+  primary, secondary, tertiary,
+
+  /* Status */
+  done, fail, warn, info,
+
+  /* Gray */
+  gray-1, gray-2, gray-3, gray-4,
+  gray-5, gray-6, gray-7, gray-8
+) from '../var/color';
+
 .none {
-    border-color: transparent;
+  border-color: transparent;
+}
+
+.gray-1 {
+  border-color: gray-1;
+}
+
+.gray-2 {
+  border-color: gray-2;
 }

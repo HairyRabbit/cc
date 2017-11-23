@@ -2,9 +2,23 @@
  * Sidebar
  */
 
-.sidebar {
-    composes: flex   from 'cc/flex';
-    composes: col    from 'cc/flex/direction';
-    composes: gray-7 from 'cc/color/background';
-    composes: gray-2 from 'cc/color/color';
+@value logo-size, logo-mini-size from './header/logo';
+
+@value sidebar-size: 13rem;
+@value sidebar-mini-size: 3rem;
+
+
+
+.container {
+  composes: flex   from 'cc/flex';
+  composes: col    from 'cc/flex/direction';
+  composes: gray-7 from 'cc/color/background';
+  composes: gray-2 from 'cc/color/color';
+
+  transition: width 0.2s ease-in-out;
+  width: sidebar-mini-size;
+}
+
+.expand {
+  width: sidebar-size;
 }

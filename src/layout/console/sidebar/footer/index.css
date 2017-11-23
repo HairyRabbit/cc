@@ -3,21 +3,47 @@
  */
 
 .footer {
-    composes: all-1  from 'cc/box/padding';
+  composes: all-1  from 'cc/box/padding';
 }
 
 .main {
-    composes: ui   from 'cc/font/size';
-    composes: line from '../../../../box';
-    composes: h-1  from 'cc/box/padding';
+  composes: ui   from 'cc/font/size';
+  composes: line from '../../../../box';
+  composes: h-1  from 'cc/box/padding';
+}
+
+.main-mini {
+  composes: ui   from 'cc/font/size';
+  composes: line from '../../../../box';
 }
 
 .icon {
-    composes: left from '../../../../box';
-    composes: icon from '../../../../icon';
-    composes: h-1  from 'cc/box/padding';
+  composes: left from '../../../../box';
+  composes: icon from '../../../../icon';
+  composes: h-1  from 'cc/box/padding';
+}
+
+.icon-mini {
+  composes: left from '../../../../box';
+  composes: icon from '../../../../icon';
 }
 
 .content {
-    composes: main from '../../../../box';
+  composes: main from '../../../../box';
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.content-entering,
+.content-exited {
+  opacity: 0;
+  transform: translate3d(0.5rem, 0, 0);
+}
+
+.content-exiting,
+.content-entered {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }

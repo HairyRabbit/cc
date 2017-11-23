@@ -2,16 +2,63 @@
  * Sidebar Submenu
  */
 
-.sub {
-    composes: v-1     from 'cc/box/padding';
-    composes: h-n1    from 'cc/box/margin';
-    composes: black-1 from 'cc/color/background';
+@value submenu-margin-top: 0.5rem;
+@value submenu-padding: 0.5rem;
+@value submenu-font-size: 14px;
+@vlaue submenu-line-height: 1.5;
 
-    padding-left:  2.25rem;     /* 1 */
-    margin-top:    0.5rem;      /* 2 */
-    margin-bottom: -1.25rem;    /* 3 */
+
+.sub {
+  composes: v-1     from 'cc/box/padding';
+  composes: h-n1    from 'cc/box/margin';
+  /* composes: black-1 from 'cc/color/background'; */
+
+  padding-left:  2rem;        /* 1 */
+  margin-top:    0.5rem;      /* 2 */
+  margin-bottom: -1.25rem;    /* 3 */
+
+  transition: all 0.2s ease-out, background-color 0.2s ease-out 0.21s;
+
+  overflow: hidden;
+}
+
+.active {
 }
 
 .item {
-    composes: item-common from './';
+  composes: item-common from './';
+  transform: translate3d(0.5rem, 0, 0);
+  transition: all 0.2s ease-out 0.21s;
+}
+
+
+.sub-entering,
+.sub-exited {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  composes: none from 'cc/color/background';
+}
+
+.sub-entered,
+.sub-exiting {
+  height: 90px;
+  margin-top:    0.5rem;
+  margin-bottom: -1.25rem;
+  padding-top:   0.5rem;
+  padding-bottom: 0.5rem;
+  composes: black-1 from 'cc/color/background';
+}
+
+.item-exiting,
+.item-entered {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.item-entering,
+.item-exited {
+  opacity: 0;
+  transform: translate3d(0.5rem, 0, 0);
 }

@@ -2,26 +2,34 @@
  * Border
  */
 
-.solid {
-    border: 1px solid;
+.none {
+  border: none;
 }
 
-.none {
-    border: none;
+.solid {
+  border: 1px solid;
+}
+
+.bottom {
+  border-bottom: 1px solid;
+}
+
+.right {
+  border-right: 1px solid;
 }
 
 .list {
-    border-bottom: 1px solid;
+  composes: bottom;
 
-    &:last-child {
-        border-bottom: none;
-    }
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .list-h {
-    border-right: 1px solid;
+  composes: right;
 
-    &:last-child {
-        border-right: none;
-    }
+  &:last-child {
+    border-right: none;
+  }
 }

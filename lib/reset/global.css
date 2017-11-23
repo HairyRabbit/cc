@@ -1,5 +1,5 @@
 /**
- * Reset html and body.
+ * Reset html and body and other global role.
  *
  * @var {Array<string>} main-font-family
  * @var {size} main-font-size
@@ -15,26 +15,23 @@
 @value main-background-color from '../var/color';
 
 html {
-    font-size: main-font-size;
-    font-family: main-font-family;
-
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust:     100%;
-    text-size-adjust:         100%;
+  font-size:   main-font-size;
+  font-family: main-font-family;
 }
 
 body {
-    margin:  0;
-    padding: 0;
+  font-size:   100%;
+  line-height: main-line-height;
 
-    font-size:   100%;
-    line-height: main-line-height;
-
-    background-color: main-background-color;
-    color:            main-color;
+  background-color: main-background-color;
+  color:            main-color;
 }
 
 [hidden] {
-    display: none !important;
-    visibility: hidden;
+  display: none !important;
+  visibility: hidden;
+}
+
+[tabindex="-1"] {
+  outline: none;
 }

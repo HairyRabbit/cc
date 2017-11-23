@@ -1,7 +1,9 @@
 /**
  * Global reset styles.
  *
- *
+ * 1.Normalize.css
+ * 2.Suitcss
+ * 3.Other reset
  */
 
 /**
@@ -21,26 +23,7 @@
 
 /**
  * Reset all the things.
+ *
+ * @link reset/index.css
  */
 @import './reset';
-
-[tabindex="-1"] {
-    outline: none;
-}
-
-textarea {
-    resize: vertical;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    font-family: inherit;
-}
-
-button,
-[role=button] {
-    cursor: pointer;
-}

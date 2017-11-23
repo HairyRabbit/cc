@@ -1,0 +1,32 @@
+/**
+ * Overflow
+ *
+ * container overflow.
+ *
+ * 1. hidden
+ * 2. auto
+ */
+
+.hidden {
+  overflow: hidden;
+}
+
+.h-hidden {
+  overflow-x: hidden;
+}
+
+.v-hidden {
+  overflow-v: hidden;
+}
+
+.auto {
+  overflow: auto;
+}
+
+.h-auto {
+  overflow-x: auto;
+}
+
+.v-auto {
+  overflow-y: auto;
+}

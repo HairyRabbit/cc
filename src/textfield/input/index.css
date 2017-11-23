@@ -9,7 +9,7 @@
  * @var {color} border-focus-color - light(primary, 50%)
  */
 
-@value primary from '../../../lib/var/color';
+@value primary from 'cc/var/color';
 
 @value border-default-color: #ddd;
 @value border-hover-color:   color(primary tint(50%));

@@ -1,0 +1,17 @@
+.tab {
+  composes: flex from 'cc/flex';
+}
+
+.title {
+  composes: pointer from 'cc/mouse/cursor';
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  margin-right: 0.5rem;
+}
+
+@value primary from 'cc/var/color';
+
+.active {
+  border-color: primary;
+}
