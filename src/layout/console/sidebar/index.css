@@ -2,12 +2,12 @@
  * Sidebar
  */
 
-@value logo-size, logo-mini-size from './header/logo';
+@value size-1                    from 'cc/var/box';
+@value logo-size, logo-mini-size from './logo';
 
-@value sidebar-size: 13rem;
-@value sidebar-mini-size: 3rem;
-
-
+@value container-size:      calc(size-1 * 2 + logo-size);
+@value container-mini-size: calc(size-1 * 2 + logo-mini-size);
+@value header-height:       5rem;
 
 .container {
   composes: flex   from 'cc/flex';
@@ -16,9 +16,17 @@
   composes: gray-2 from 'cc/color/color';
 
   transition: width 0.2s ease-in-out;
-  width: sidebar-mini-size;
+  width: container-mini-size;
+}
+
+.header {
+  composes: center from 'cc/flex';
+  composes: all-1  from 'cc/box/padding';
+  composes: white  from 'cc/color/color';
+
+  flex: 0 header-height;
 }
 
 .expand {
-  width: sidebar-size;
+  width: container-size;
 }

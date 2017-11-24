@@ -4,10 +4,13 @@
 
 .title {
   composes: pointer from 'cc/mouse/cursor';
+  composes: bottom from 'cc/box/border';
+  display: block;
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid #ddd;
+  border-color: #eee;
   font-size: 14px;
   margin-right: 0.5rem;
+  transition: border-color 0.2s ease-in-out;
 }
 
 @value primary from 'cc/var/color';

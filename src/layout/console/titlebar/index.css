@@ -12,8 +12,48 @@
  * +-------------------------+
  */
 
-.titlebar {
-    composes: top layer from 'cc/position';
-    composes: sticky    from 'cc/position/position';
-    composes: white     from 'cc/color/background';
+@value size-1, size-2 from 'cc/var/box';
+
+@value body-padding: calc(size-2 + size-1);
+
+.container {
+  composes: top layer from 'cc/position';
+  composes: sticky    from 'cc/position/position';
+  composes: white     from 'cc/color/background';
+}
+
+.header {
+  composes: flex    from 'cc/flex';
+  composes: between from 'cc/flex/justify';
+  composes: solid   from 'cc/box/border';
+
+  border-color: #eee;
+}
+
+.body {
+  composes: v-2 from 'cc/box/padding';
+
+  padding-left:  body-padding;
+  padding-right: body-padding;
+}
+
+.footer {
+  composes: h-2 from 'cc/box/padding';
+
+  margin-top: -1rem;
+}
+
+.content {
+  composes: v-1 from 'cc/box/margin';
+  composes: ui  from 'cc/font/size'
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: lighter;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  composes: gray-4 from 'cc/color/color';
 }
