@@ -1,5 +1,12 @@
 /**
  * Border
+ *
+ * 1. none - display all the border.
+ * 2. solid - basic border with 1px width.
+ * 3. bottom - only bottom 1px border, used for listView layout.
+ * 4. right - only right 1px border, used for tableView layout.
+ * 5. list - compose with bottom, and remove last child bottom bottom border.
+ * 6. list-h - compose with right, and remove last child bottom right border.
  */
 
 .none {
