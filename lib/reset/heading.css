@@ -1,40 +1,44 @@
+/**
+ * Typo
+ */
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin-top: 1rem;
-    margin-bottom: 0.8rem;
-    color: #222;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+  color: #222;
 }
 
 h1 {
-    font-size: 2rem;
-    font-weight: lighter;
+  font-size: 2rem;
+  font-weight: lighter;
 }
 
 h2 {
-    font-size: 1.75rem;
-    font-weight: lighter;
+  font-size: 1.75rem;
+  font-weight: lighter;
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-weight: lighter;
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
 
 h4 {
-    font-size: 1.25rem;
-    font-weight: normal;
+  font-size: 1.25rem;
+  font-weight: normal;
 }
 
 h5 {
-    font-size: 1rem;
-    font-weight: normal;
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 h6 {
-    font-size: 0.85rem;
-    font-weight: normal;
+  font-size: 0.85rem;
+  font-weight: normal;
 }

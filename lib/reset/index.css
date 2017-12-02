@@ -23,3 +23,8 @@
 @import './strong';
 @import './image';
 @import './svg';
+
+/**
+ * Other.
+ */
+@import './code';

@@ -25,6 +25,7 @@
   composes: white  from 'cc/color/color';
 
   flex: 0 header-height;
+  max-height: header-height;
 }
 
 .expand {

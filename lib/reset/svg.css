@@ -1,3 +1,9 @@
+/**
+ * Svg
+ *
+ * Used for inline svg icons.
+ */
+
 svg {
-    fill: currentColor;
+  fill: currentColor;
 }
