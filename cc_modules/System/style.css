@@ -1,0 +1,6 @@
+.container {
+  composes: grow   from 'cc/flex';
+  composes: radius from 'cc/box/radius';
+  composes: all-2  from 'cc/box/padding';
+  composes: white  from 'cc/color/background';
+}

@@ -1,0 +1,28 @@
+.container {
+  composes: grow   from 'cc/flex';
+  composes: radius from 'cc/box/radius';
+  composes: all-2  from 'cc/box/padding';
+  composes: white  from 'cc/color/background';
+  composes: center from 'cc/box/margin';
+  max-width: 960px;
+}
+
+.main {
+  /* composes: center from 'cc/box/margin'; */
+  /* max-width: 960px; */
+}
+
+.demo {
+  border: 1px solid #ddd;
+  composes: center from 'cc/flex';
+  max-width: 20rem;
+  min-height: 14rem;
+  background-color: snow;
+}
+
+.codebox {
+  border: 1px solid #fff;
+  background-color: snow;
+  composes: all-1  from 'cc/box/padding';
+  composes: bottom from 'cc/box/margin';
+}

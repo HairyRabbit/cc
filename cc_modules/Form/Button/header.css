@@ -1,0 +1,25 @@
+.header {
+  composes: flex from 'cc/flex';
+}
+
+.left {
+  composes: grow from 'cc/flex';
+  composes: start from 'cc/flex/justify';
+  composes: center from 'cc/flex/items';
+}
+
+.right {
+  composes: grow from 'cc/flex';
+  composes: start from 'cc/flex/justify';
+  composes: center from 'cc/flex/items';
+}
+
+
+.desc {
+  & h2 {
+    font-size: 1.25rem;
+  }
+  & p {
+    color: #aaa;
+  }
+}
